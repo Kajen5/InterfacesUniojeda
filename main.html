@@ -1,0 +1,114 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cesar Ng</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="static/css/mystyle.css"> <!--c Llamamos al archivo CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- https://openwebinars.net/blog/tutorial-bootstrap-3-introduccion-e-instalacion/ -->
+  </head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top nav-pills">
+        <div class="container"> <!-- container tiene un pequeño espaciado hacia los lados -->
+          <a href="#" class="navbar-brand"> <!-- a href muestr el nombre del sitio web// class="navbar-brand" estileriza el sitio web -->
+           <img  class="img-fluid float-center" id="logo"src="img/logo.png" alt="Arduino" style=" height: 30px;"> <!-- texto del navbar -->
+          </a>
+          <!-- boton qu aparece en pantalas pequeñas usando bootsrap tipo collarpse -->
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"> <!-- el id es #navbarColapse que lo crea el programador -->
+            <span class="navbar-toggler-icon"></span> <!-- icono de menu de hamburguesa -->
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarCollapse"> <!-- id = "navbarcollapse" creado por el programador cuando el boton preciona se adapta a dipositivo movil -->
+            <ul class="navbar-nav ml-auto"> <!-- ml se va al lado derecho de la pantalla -->
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Arduino
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">¿Qué es?</a>
+                <a class="dropdown-item" href="#">Historia</a>
+                <a class="dropdown-item" href="#">HW Arduino</a>
+                <a class="dropdown-item" href="#">SW Arduino</a>
+              </div>
+            </li>     
+              
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                RasberryPi
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">¿Qué es?</a>
+                <a class="dropdown-item" href="#">Historia</a>
+                <a class="dropdown-item" href="#">Comunidad</a>
+              </div>
+            </li>     
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="container card" id="principal">
+  <div class="container " style="padding-top:1vh;padding-bottom:10vh">
+    <center>
+<div id="demo" class="carousel slide " data-ride="carousel" >
+<!-- Indicators -->
+  <ul class="carousel-indicators">
+  <li data-target="#demo" data-slide-to="0" class="active"></li>
+  <li data-target="#demo" data-slide-to="1"></li>
+  </ul>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img  class="img-fluid float-center" src="img/queArduino.jpg" alt="Arduino">
+    <div class="carousel-caption">
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img  class="img-fluid" src="img/queRasb.jpg" alt="RasberryPi" height="100px">
+      <div class="carousel-caption">
+      <!--  <h3>Rasberry Pi</h3>  -->
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div>
+</div>
+</center>
+  <h4 class="row h-100 justify-content-center align-items-center" id="titulo">Titulo</h4>
+  <div class="row h-100 justify-content-center align-items-center">
+    Contenido
+    
+    
+
+</div>
+</div>
+<footer>
+    <div class="container-fluid">
+      <div class="row"> <!-- para que el contenido este centrado hay una fila -->
+        <div class="col-md-12 p-5"> <!-- columna de 12 un pading interno espaciado de 5 -->
+          <!--Footer Bottom-->
+          <p class="text-center">&copy; Copyright 2018 - Ciudad Ojeda, Zulia, Venezuela.</p> <!-- &copy es el simbolo de corporacion -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>-->
+<script src="static/jquery-3.3.1.slim.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script> <!-- Llamamos al JavaScript de Bootstrap -->
+<!-- https://openwebinars.net/blog/tutorial-bootstrap-3-introduccion-e-instalacion/ -->
+</body>
+</html>
